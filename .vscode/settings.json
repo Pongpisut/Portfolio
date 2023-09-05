@@ -1,0 +1,33 @@
+{
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "prettier.printWidth": 120,
+  "html.format.wrapLineLength": 120,
+  "html.format.wrapAttributes": "auto",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "relativePath.ignore": ["**/node_modules/**", "**/dist/**", "**/build/**", "**/public/**"],
+  "relativePath.removeExtension": true,
+  "errorLens.enabledDiagnosticLevels": ["error", "warning"],
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#8200ae"
+  }
+}

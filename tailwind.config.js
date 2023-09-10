@@ -17,7 +17,14 @@ module.exports = {
       colors: {
         primary: "#131424",
         secondary: "#393A47",
-        accent: "#F13024",
+        active: "#0ea5e9",
+        transition1: "#0284c7",
+        transition2: "#0ea5e9",
+        transition3: "#38bdf8",
+      },
+      backgroundImage: {
+        explosion: 'url("/image/bg-explosion.png")',
+        site: 'url("/image/site-bg.svg")',
       },
       animation: {
         "spin-slow": "spin 6s linear infinite",
@@ -25,10 +32,6 @@ module.exports = {
       fontFamily: {
         poppins: [`var(--font-poppins)`, "sans-serif"],
         sora: [`var(--font-sora)`, "sans-serif"],
-      },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
     screens: { sm: "640px", md: "768px", lg: "960px", xl: "1200px" },

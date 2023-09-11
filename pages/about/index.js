@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Avatar, Circles } from "@/components";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
-import { aboutData } from "./utils/Constant";
+import { aboutData } from "../../utils/about/Constant";
 import { BiSolidBadgeCheck } from "react-icons/bi";
 
 const index = () => {

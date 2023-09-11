@@ -9,7 +9,7 @@ import Button from "./button/Button";
 import Social from "./social/Social";
 import TopLeftImg from "./image/topleftimg/TopLeftImg";
 import Transition from "./transition/Transition";
-import WorkSlider from "./slider/WorkSlider";
+import WorksSlider from "./slider/WorksSlider";
 
 export {
   Avatar,
@@ -23,5 +23,5 @@ export {
   Social,
   TopLeftImg,
   Transition,
-  WorkSlider,
+  WorksSlider,
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import { WorkSlider, Circles, Blub } from "@/components";
+import { WorksSlider, Circles, Blub } from "@/components";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
@@ -37,7 +37,7 @@ const index = () => {
             exit="hidden"
             className="w-full xl:max-w-[65%]"
           >
-            <WorkSlider />
+            <WorksSlider />
           </motion.div>
         </div>
       </div>

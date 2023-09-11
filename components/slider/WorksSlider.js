@@ -10,7 +10,7 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
-const WorkSlider = () => {
+const WorksSlider = () => {
   return (
     <Swiper
       spaceBetween={10}
@@ -56,4 +56,4 @@ const WorkSlider = () => {
   );
 };
 
-export default WorkSlider;
+export default WorksSlider;

@@ -4,14 +4,7 @@ const path = require("path");
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "**",
-      },
-    ],
-  },
+  distDir: "_next",
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },

@@ -9,7 +9,7 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
-  basePath: isProd ? "https://pongpisut.github.io/Portfolio/" : undefined,
+  basePath: isProd ? "/Portfolio" : undefined,
   images: {
     loader: "akamai",
     path: "/",

@@ -5,7 +5,11 @@ import { RiInstagramLine, RiFacebookLine, RiLineLine, RiLinkedinLine, RiPhoneLin
 const Social = () => {
   return (
     <div className="flex items-center gap-x-5 text-lg">
-      <Link href={`mailto:${process.env.NEXT_GMAIL_URL}`} className="hover:text-active transition-all duration-300">
+      <Link
+        href={`mailto:${process.env.NEXT_GMAIL_URL}`}
+        className="hover:text-active transition-all duration-300"
+        passHref={true}
+      >
         <RiMailLine />
       </Link>
 
@@ -42,7 +46,11 @@ const Social = () => {
         <RiLinkedinLine />
       </Link>
 
-      <Link href={`tel:${process.env.NEXT_PHONE}`} className="hover:text-active transition-all duration-300">
+      <Link
+        href={`tel:${process.env.NEXT_PHONE}`}
+        className="hover:text-active transition-all duration-300"
+        passHref={true}
+      >
         <RiPhoneLine />
       </Link>
     </div>

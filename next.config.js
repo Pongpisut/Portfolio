@@ -9,11 +9,11 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
+  basePath: isProd ? "https://pongpisut.github.io/Portfolio/" : undefined,
   images: {
     loader: "akamai",
     path: "/",
   },
-  assetPrefix: isProd ? "https://pongpisut.github.io/Portfolio/" : undefined,
 };
 
 module.exports = nextConfig;

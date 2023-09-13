@@ -5,6 +5,7 @@ const isProd = process.env.NODE_ENV === "production";
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  output: "export",
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
@@ -12,7 +13,7 @@ const nextConfig = {
     loader: "akamai",
     path: "/",
   },
-  assetPrefix: isProd ? "/Portfolio" : undefined,
+  assetPrefix: isProd ? "https://pongpisut.github.io/Portfolio/" : undefined,
 };
 
 module.exports = nextConfig;

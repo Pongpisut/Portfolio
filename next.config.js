@@ -9,10 +9,11 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
+  assetPrefix: isProd ? "/Portfolio/" : undefined,
   basePath: isProd ? "/Portfolio" : undefined,
   images: {
     loader: "akamai",
-    path: "/",
+    path: "",
   },
 };
 

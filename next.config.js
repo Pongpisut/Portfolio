@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const path = require("path");
 const isProd = process.env.NODE_ENV === "production";
+const { SOME_URL } = process.env;
 
 const nextConfig = {
   reactStrictMode: true,
@@ -14,6 +15,9 @@ const nextConfig = {
   },
   assetPrefix: isProd ? "/Portfolio/" : undefined,
   basePath: isProd ? "/Portfolio" : undefined,
+  env: {
+    SOME_URL,
+  },
 };
 
 module.exports = nextConfig;

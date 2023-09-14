@@ -5,11 +5,8 @@
   "scripts": {
     "dev": "next dev -p 9000",
     "build": "next build",
-    "build-dev": "cp .env.dev .env.local && yarn build",
-    "build-prod": "cp .env.prod .env.local && yarn build",
     "start": "next start -p 9000",
-    "lint": "next lint",
-    "export": "next export"
+    "lint": "next lint"
   },
   "dependencies": {
     "autoprefixer": "10.4.15",

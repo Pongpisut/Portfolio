@@ -11,7 +11,7 @@ const nextConfig = {
   assetPrefix: isProd ? "/Portfolio/" : undefined,
   basePath: isProd ? "/Portfolio" : undefined,
   images: {
-    path: isProd ? "/Portfolio" : undefined,
+    path: "/Portfolio",
   },
 };
 

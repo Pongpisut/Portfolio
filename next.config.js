@@ -13,7 +13,7 @@ const nextConfig = {
   basePath: isProd ? "/Portfolio" : undefined,
   images: {
     loader: "akamai",
-    path: "",
+    path: "/Portfolio",
   },
 };
 

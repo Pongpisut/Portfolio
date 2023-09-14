@@ -8,8 +8,9 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
-  assetPrefix: "/Portfolio/",
-  basePath: "/Portfolio",
+  assetPrefix: isProd ? "/Portfolio/" : undefined,
+  basePath: isProd ? "/Portfolio" : undefined,
+  experimental: { appDir: true },
 };
 
 module.exports = nextConfig;

@@ -6,7 +6,7 @@ const Social = () => {
   return (
     <div className="flex items-center gap-x-5 text-lg">
       <Link
-        href={`mailto:${process.env.NEXT_GMAIL_URL}`}
+        href={`mailto:${process.env.NEXT_PUBLIC_GMAIL_URL}`}
         className="hover:text-active transition-all duration-300"
         passHref={true}
       >
@@ -14,7 +14,7 @@ const Social = () => {
       </Link>
 
       <Link
-        href={`${process.env.NEXT_INSTRAGRAM_URL}`}
+        href={`${process.env.NEXT_PUBLIC_INSTRAGRAM_URL}`}
         target="_blank"
         className="hover:text-active transition-all duration-300"
       >
@@ -22,7 +22,7 @@ const Social = () => {
       </Link>
 
       <Link
-        href={`${process.env.NEXT_INSTRAGRAM_URL}`}
+        href={`${process.env.NEXT_PUBLIC_INSTRAGRAM_URL}`}
         target="_blank"
         className="hover:text-active transition-all duration-300"
       >
@@ -30,7 +30,7 @@ const Social = () => {
       </Link>
 
       <Link
-        href={`${process.env.NEXT_LINE_URL}`}
+        href={`${process.env.NEXT_PUBLIC_LINE_URL}`}
         target="_blank"
         className="hover:text-active transition-all duration-300
       "
@@ -39,7 +39,7 @@ const Social = () => {
       </Link>
 
       <Link
-        href={`${process.NEXT_LINKIN_URL}`}
+        href={`${process.NEXT_PUBLIC_LINKIN_URL}`}
         target="_blank"
         className="hover:text-active transition-all duration-300"
       >
@@ -47,7 +47,7 @@ const Social = () => {
       </Link>
 
       <Link
-        href={`tel:${process.env.NEXT_PHONE}`}
+        href={`tel:${process.env.NEXT_PUBLIC_PHONE}`}
         className="hover:text-active transition-all duration-300"
         passHref={true}
       >

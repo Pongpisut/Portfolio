@@ -7,8 +7,8 @@ const Header = () => {
   return (
     <>
       <Head>
-        <title>{process.env.NEXT_FULLNAME_PAGE}</title>
-        <meta name="description" content={process.env.NEXT_DESCRIPTION_PAGE} />
+        <title>{process.env.NEXT_PUBLIC_FULLNAME_PAGE}</title>
+        <meta name="description" content={process.env.NEXT_PUBLIC_DESCRIPTION_PAGE} />
       </Head>
       <header className="absolute z-30 w-full flex items-center px-16 xl:px-0 xl:h-[90px]">
         <div className="container mx-auto">

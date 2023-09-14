@@ -73,8 +73,14 @@ const Home = () => {
           >
             Over the past 3+ years, I've worked in various areas of {text}
           </motion.p>
-          <div className="flex xl:justify-start justify-center relative z-10">
-            <motion.div variants={fadeIn("down", 0.4)} initial="hidden" animate="show" exit="hidden">
+          <div className="relative z-10">
+            <motion.div
+              variants={fadeIn("down", 0.4)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="flex xl:justify-start justify-center gap-[10px]"
+            >
               <Button />
             </motion.div>
           </div>

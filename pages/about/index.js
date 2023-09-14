@@ -3,7 +3,8 @@ import { Avatar, Circles } from "@/components";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import { aboutData } from "../../utils/about/Constant";
-import { BiSolidBadgeCheck } from "react-icons/bi";
+import { BiPlus, BiSolidBadgeCheck } from "react-icons/bi";
+import _ from "lodash";
 
 const index = () => {
   const [index, setIndex] = useState(0);
@@ -31,7 +32,7 @@ const index = () => {
             molestias totam neque perspiciatis?
           </p>
         </div>
-        <div className="flex flex-col w-full xl:max-w-[48%] h-[480px] align-center z-10">
+        <div className="flex flex-col w-full xl:max-w-[50%] h-[500px] align-center z-10">
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, idx) => {
               const isActive =
@@ -39,7 +40,7 @@ const index = () => {
               return (
                 <div
                   key={idx}
-                  className={`${isActive} cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:bottom-1 after:left-0`}
+                  className={`${isActive} cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:bottom-1 after:left-0 `}
                   onClick={() => setIndex(idx)}
                 >
                   {item?.title}
@@ -48,17 +49,43 @@ const index = () => {
             })}
           </div>
 
-          <div className="bg-[rgba(65,47,123,0.15)] p-4 py-2 xl:py-6 flex flex-col gap-y-4 items-center xl:items-start rounded-xl">
+          <div className="bg-[rgba(65,47,123,0.15)] p-4 py-2 xl:py-6 flex flex-col gap-y-4 items-start rounded-xl overflow-auto">
             {aboutData[index]?.info.map((item, idx) => {
               return (
-                <div key={idx} className="max-w-max gap-x-2  text-white/60">
+                <div key={idx} className="max-w-max gap-x-2  text-white/60 mt-3 xl:mt-1">
                   <div className="font-medium mb-2 md:mb-0">
-                    <div className="flex flex-row items-center">
+                    <div className="flex flex-row items-center text-xl">
                       <BiSolidBadgeCheck className="text-active mr-2" />
                       {item?.title}
                     </div>
                   </div>
-                  <div>{item?.stage}</div>
+                  <div className="indent-0 text-sm mt-1 xl:indent-7 text-left xl:text-justify">{item?.company}</div>
+                  <div className="indent-0 text-sm mt-1 xl:indent-7 text-left xl:text-justify">{item?.stage}</div>
+                  <div>
+                    {!_.isEmpty(item?.position)
+                      ? _.map(item?.position, (data, index) => {
+                          return (
+                            <div key={index}>
+                              {data?.subPostion ? (
+                                <div className="ml-0 text-sm mt-5 flex flex-row items-center xl:ml-6">
+                                  <BiPlus className="text-active  mr-2" />
+                                  {data?.subPostion}
+                                </div>
+                              ) : null}
+                              <div className="indent-0 text-xs text-left xl:text-justify xl:indent-14 ">
+                                {data?.title.map((content, id) => {
+                                  return (
+                                    <div key={id} className="mt-3.5">
+                                      {content?.content}
+                                    </div>
+                                  );
+                                })}
+                              </div>
+                            </div>
+                          );
+                        })
+                      : null}
+                  </div>
                   <div className="flex flex-row flex-wrap gap-x-4 mt-3">
                     {item?.icons?.map((icon, idx) => {
                       return (

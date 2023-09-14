@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const path = require("path");
 const isProd = process.env.NODE_ENV === "production";
-const { SOME_URL } = process.env;
 
 const nextConfig = {
   reactStrictMode: true,
@@ -9,15 +8,14 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
-  images: {
-    loader: "akamai",
-    path: "",
-  },
+  images: isProd
+    ? {
+        loader: "akamai",
+        path: "",
+      }
+    : null,
   assetPrefix: isProd ? "/Portfolio/" : undefined,
   basePath: isProd ? "/Portfolio" : undefined,
-  env: {
-    SOME_URL,
-  },
 };
 
 module.exports = nextConfig;

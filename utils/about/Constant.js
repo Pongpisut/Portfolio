@@ -1,4 +1,4 @@
-import { FaHtml5, FaCss3, FaJs, FaReact, FaWordpress, FaFigma } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaReact, FaFigma } from "react-icons/fa";
 import { FaBootstrap, FaGit, FaSass } from "react-icons/fa6";
 import { RiJavascriptLine } from "react-icons/ri";
 import {
@@ -9,6 +9,7 @@ import {
   SiAntdesign,
   SiTailwindcss,
   SiAdobeillustrator,
+  SiMysql,
 } from "react-icons/si";
 
 export const aboutData = [
@@ -16,16 +17,57 @@ export const aboutData = [
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title: "Junior Full Stack Developer",
+        company: "INNOVISOR TECH COMPANY LIMITED",
+        stage: "September 2022 - Present",
+        position: [
+          {
+            subPostion: "Full Stack developer NestJS,ReactJS",
+            title: [
+              { content: "Create a central component for the project." },
+              { content: "Convert design figma to ReactJS and call api Graphql and Restful Api." },
+              { content: "Create an Api using NestJS as per the instructions of System Analyst." },
+            ],
+          },
+        ],
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
+        title: "Front-End Web Developer / Web Design",
+        company: "ORANGE TECHNOLOGY SOLUTION COMPANY LIMITED",
+        stage: "September 2020 - September 2022",
+        position: [
+          {
+            subPostion: "Web Design (Adobe XD / Photoshop / Figma)",
+            title: [
+              { content: "Design logo / banner / mobile website  / rich menu / website coporate e-commerce etc." },
+              { content: "Convert figma design and responsive website using Html/Css/Scss" },
+              { content: "Control freelance work to be completed on time." },
+              { content: "Get website requirements from customers." },
+            ],
+          },
+          {
+            subPostion: "Front-end web developer (NuxtJS)",
+            title: [{ content: "Convert figma design and responsive website using NuxtJS." }],
+          },
+          {
+            subPostion: "Front-end / Back-end web developer Wordpress",
+            title: [{ content: "Convert figma design to wordpress and develop a backend system using php." }],
+          },
+        ],
       },
       {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
+        title: "Front-End Web Developer (Internship)",
+        company: "BANGKOK WEB SOLUTION CO., LTD",
+        stage: "June 2019 - Octorber 2019",
+        position: [
+          {
+            subPostion: "",
+            title: [
+              { content: "Design website using Adobe XD and Photoshop." },
+              { content: "Front-end web developer (Html/Css/Scss editor)" },
+            ],
+          },
+        ],
       },
     ],
   },
@@ -46,6 +88,7 @@ export const aboutData = [
           { icon: <SiAntdesign />, name: "Ant Design" },
           { icon: <SiTailwindcss />, name: "Tailwindcss" },
           { icon: <FaGit />, name: "Git" },
+          { icon: <SiMysql />, name: "MySql" },
         ],
       },
       {

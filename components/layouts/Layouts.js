@@ -3,6 +3,7 @@ import Header from "../header/Header";
 import Nav from "../nav/Nav";
 import { Poppins } from "next/font/google";
 import TopLeftImg from "../image/topleftimg/TopLeftImg";
+import { Suspense } from "react";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -18,7 +19,9 @@ const Layouts = ({ children }) => {
       <TopLeftImg />
       <Nav />
       <Header />
-      <main>{children}</main>
+      <Suspense fallback={<p>Loading ....</p>}>
+        <main>{children}</main>
+      </Suspense>
     </div>
   );
 };

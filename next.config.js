@@ -9,8 +9,7 @@ const nextConfig = {
     includePaths: [path.join(__dirname, "styles")],
   },
   assetPrefix: isProd ? "/Portfolio/" : undefined,
-  basePath: isProd ? "/Portfolio" : undefined,
-  experimental: { appDir: true },
+  // basePath: isProd ? "/Portfolio" : undefined,
 };
 
 module.exports = nextConfig;

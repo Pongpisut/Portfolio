@@ -14,7 +14,8 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "https://pongpisut.github.io/Portfolio/",
+        hostname: "pongpisut.github.io",
+        pathname: "/Portfolio/**",
       },
     ],
   },

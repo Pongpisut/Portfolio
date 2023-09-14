@@ -23,8 +23,8 @@ module.exports = {
         transition3: "#38bdf8",
       },
       backgroundImage: {
-        explosion: 'url("/image/bg-explosion.png")',
-        site: 'url("/image/site-bg.svg")',
+        explosion: `url(${process.env.NEXT_ASSET_PREFIX}/image/bg-explosion.png)`,
+        site: `url(${process.env.NEXT_ASSET_PREFIX}/image/site-bg.svg)`,
       },
       animation: {
         "spin-slow": "spin 6s linear infinite",

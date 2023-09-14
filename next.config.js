@@ -11,7 +11,12 @@ const nextConfig = {
   assetPrefix: isProd ? "/Portfolio/" : undefined,
   basePath: isProd ? "/Portfolio" : undefined,
   images: {
-    path: "https://pongpisut.github.io/Portfolio/",
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "https://pongpisut.github.io/Portfolio/",
+      },
+    ],
   },
 };
 

@@ -8,6 +8,10 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
+  images: {
+    loader: "akamai",
+    path: "",
+  },
   assetPrefix: isProd ? "/Portfolio/" : undefined,
   basePath: isProd ? "/Portfolio" : undefined,
 };

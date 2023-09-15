@@ -28,8 +28,8 @@ const index = () => {
             My <span className="text-active">Experience & Skill</span>
           </h2>
           <p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere id ipsa, deserunt minima ab velit molestiae
-            molestias totam neque perspiciatis?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere id ipsa, deserunt minima ab velit
+            perspiciatis?
           </p>
         </div>
         <div className="flex flex-col w-full xl:max-w-[50%] h-[500px] align-center z-10">

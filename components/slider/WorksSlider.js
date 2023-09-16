@@ -65,7 +65,7 @@ const WorksSlider = () => {
                           </div>
                         </div>
 
-                        <div className="absolute bottom-[10px] left-[5px]">
+                        <div className="absolute bottom-[10px] left-[5px] invisible md:visible">
                           <motion.div
                             style={{ backgroundColor: "#000" }}
                             animate={{

@@ -38,7 +38,7 @@ const WorksSlider = () => {
             <div className="grid grid-cols-2 grid-rows-2 gap-4">
               {item?.images?.map((image, idx) => {
                 return (
-                  <Link href="" key={idx}>
+                  <Link href={image?.link} target="_blank" passHref={true} key={idx}>
                     <motion.div
                       className="relative rounded-lg overflow-hidden flex items-center justify-center group"
                       initial="initial"
@@ -78,7 +78,7 @@ const WorksSlider = () => {
                             }}
                             className=" pl-5 pr-5 rounded-full ease-out duration-300"
                           >
-                            <small style={{ color: "#fff" }}>Design</small>
+                            <small style={{ color: "#fff" }}>{image?.type}</small>
                           </motion.div>
                         </div>
                       </div>

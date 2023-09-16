@@ -19,9 +19,6 @@ const nextConfig = {
     : null,
   assetPrefix: isProd ? "/Portfolio/" : undefined,
   basePath: isProd ? "/Portfolio" : undefined,
-  env: {
-    NEXT_PUBLIC_FACEBOOK_URL: process.env.NEXT_PUBLIC_FACEBOOK_URL,
-  },
 };
 
 module.exports = nextConfig;

@@ -51,13 +51,13 @@ const Home = () => {
   return (
     <div className="bg-primary/70 h-screen ">
       <div className="w-full h-full relative">
-        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
+        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto ">
           <motion.h1
             variants={fadeIn("down", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1 drop-shadow-xl "
+            className="h1 drop-shadow-xl z-10"
           >
             Hello, I'm
             <br />
@@ -69,7 +69,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-white/80"
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-white/80 z-10"
           >
             Over the past 3+ years, I've worked in various areas of {text}
           </motion.p>
@@ -88,8 +88,9 @@ const Home = () => {
         <div className="gradient-04 z-0"></div>
       </div>
       <div className="bg-explosion"></div>
-      <div className="w-[1200px] h-full absolute right-0 bottom-0">
-        <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-lighten translate-z-0"></div>
+      <div className="w-full h-full absolute right-0 bottom-0">
+        {/* <div className="w-[1200px] h-full absolute right-0 bottom-0"> */}
+        <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-lighten translate-z-0 opacity-40"></div>
         <PraticlesContainer />
         <motion.div
           variants={fadeIn("up", 0.5)}
@@ -97,7 +98,7 @@ const Home = () => {
           animate="show"
           exit="hidden"
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-40 lg:right-0 lg:bottom-0"
+          className="w-full h-full max-w-[667px] max-h-[678px] absolute -bottom-40 lg:right-16 lg:bottom-0"
         >
           <Avatar />
         </motion.div>

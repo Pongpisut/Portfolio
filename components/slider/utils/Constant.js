@@ -106,8 +106,8 @@ export const workSlides = {
         },
         {
           title: "title",
-          path: "/image/thumb-p8.png",
-          type: "Design Website | Exat กรมการทางพิเศษโครงการฉลองรัชนครนายก-สระบุรี",
+          path: "/image/thumb-p4.png",
+          type: "Design Website | Bitkub BitQast",
           link: "https://www.figma.com/file/nSL1LIJuvlq6qKrUTBxKq9/Portfolio-Pongpisut-Suayroop?type=design&node-id=0-1&mode=design&t=kJ9dsQKy3SazklSP-0",
         },
       ],
@@ -117,8 +117,8 @@ export const workSlides = {
       images: [
         {
           title: "title",
-          path: "/image/thumb-p4.png",
-          type: "Design Website | Bitkub BitQast",
+          path: "/image/thumb-p8.png",
+          type: "Design Website | Exat กรมการทางพิเศษโครงการฉลองรัชนครนายก-สระบุรี",
           link: "https://www.figma.com/file/nSL1LIJuvlq6qKrUTBxKq9/Portfolio-Pongpisut-Suayroop?type=design&node-id=0-1&mode=design&t=kJ9dsQKy3SazklSP-0",
         },
       ],

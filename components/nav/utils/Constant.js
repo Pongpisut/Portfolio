@@ -8,7 +8,7 @@ export const navData = [
   { name: "work", path: "/work", icon: <HiRectangleGroup /> },
   {
     name: "contact",
-    path: `mailto:${process.env.NEXT_PUBLIC_GMAIL_URL}`,
+    path: `mailto:pongpisut1997@gmail.com`,
     icon: <HiEnvelope />,
   },
 ];

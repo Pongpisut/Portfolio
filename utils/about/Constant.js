@@ -93,7 +93,7 @@ export const aboutData = [
         ],
       },
       {
-        title: "UI/UX Design",
+        title: "Web&App Design",
         icons: [
           { icon: <FaFigma />, name: "Figma" },
           { icon: <SiAdobexd />, name: "Adobe Xd" },

@@ -25,7 +25,7 @@ module.exports = {
         transition3: "#38bdf8",
       },
       backgroundImage: {
-        explosion: `url(${conditionPath}/image/bg-explosion.png)`,
+        explosion: `url(${conditionPath}/image/bg-explosion.jpg)`,
         site: `url(${conditionPath}/image/site-bg.svg)`,
       },
       animation: {

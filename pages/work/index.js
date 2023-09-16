@@ -26,8 +26,7 @@ const index = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, quos! Porro itaque consectetur cum,
-              voluptates quae quaerat provident error dolor!
+              Over the past 3+ years, I have worked on web design and web development projects in various industries.
             </motion.p>
           </div>
           <motion.div

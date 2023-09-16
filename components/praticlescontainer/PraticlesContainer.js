@@ -49,7 +49,7 @@ const PraticlesContainer = () => {
             color: "#ffffff",
             distance: 150,
             enable: true,
-            opacity: 0.5,
+            opacity: 0.15,
             width: 1,
           },
           move: {

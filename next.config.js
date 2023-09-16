@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const path = require("path");
-const result = require("dotenv").config();
 const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig = {
@@ -17,7 +16,9 @@ const nextConfig = {
     : null,
   assetPrefix: isProd ? "/Portfolio/" : undefined,
   basePath: isProd ? "/Portfolio" : undefined,
-  env: result.parsed,
+  env: {
+    NEXT_PUBLIC_FULLNAME_PAGE: process.env.NEXT_PUBLIC_FULLNAME_PAGE,
+  },
 };
 
 module.exports = nextConfig;

@@ -3,6 +3,9 @@ const path = require("path");
 const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig = {
+  experimental: {
+    appDir: true,
+  },
   reactStrictMode: true,
   swcMinify: true,
   sassOptions: {
@@ -17,7 +20,7 @@ const nextConfig = {
   assetPrefix: isProd ? "/Portfolio/" : undefined,
   basePath: isProd ? "/Portfolio" : undefined,
   env: {
-    NEXT_PUBLIC_FULLNAME_PAGE: process.env.NEXT_PUBLIC_FULLNAME_PAGE,
+    NEXT_PUBLIC_FACEBOOK_URL: process.env.NEXT_PUBLIC_FACEBOOK_URL,
   },
 };
 

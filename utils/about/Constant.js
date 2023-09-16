@@ -10,6 +10,7 @@ import {
   SiTailwindcss,
   SiAdobeillustrator,
   SiMysql,
+  SiTypeform,
 } from "react-icons/si";
 
 export const aboutData = [
